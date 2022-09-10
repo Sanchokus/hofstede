@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Country comparison</title>
+    <link rel="stylesheet" href = "style.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn3.devexpress.com/jslib/22.1.5/js/dx.all.js"></script>
+    <script src="https://cdn3.devexpress.com/jslib/22.1.5/js/vectormap-data/world.js"></script>
+    <script src="https://cdn3.devexpress.com/jslib/22.1.5/js/vectormap-data/africa.js"></script>
+    <script src="https://cdn3.devexpress.com/jslib/22.1.5/js/vectormap-data/canada.js"></script>
+    <script src="https://cdn3.devexpress.com/jslib/22.1.5/js/vectormap-data/eurasia.js"></script>
+    <script src="https://cdn3.devexpress.com/jslib/22.1.5/js/vectormap-data/europe.js"></script>
+    <script src="https://cdn3.devexpress.com/jslib/22.1.5/js/vectormap-data/usa.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+<div class="flex-container main-container">
+    <div class="header">
+        <label for="country-chooser">Choose a country: </label>
+        <select name="country-chooser" id="country-chooser" onchange="updateData();"></select>
+    </div>
+    <div class="content flex-container">
+        <div class="left column">
+            <h1>Most similar countries</h1>
+            <table id="country-list">
+                <tr>
+                    <th>No.</th>
+                    <th>Country</th>
+                    <th>Difference</th>
+                </tr>
+            </table>
+        </div>
+        <div class="right column">
+            <div id="map"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+
+
