@@ -23,10 +23,13 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 2em;
+    padding: 20px;
+    background: lightgray;
+    height: 10vh;
 }
 
 .content {
-    flex: 1;
+    height: 90vh;
 }
 
 .column {
@@ -35,7 +38,7 @@ body {
 
 .left {
     grid-area: left;
-    flex: 1
+    flex: 1;
 }
 
 .right {
@@ -47,6 +50,7 @@ body {
 /*region table*/
 #country-chooser {
     margin-left: 1em;
+    font-size: 1em;
 }
 
 #country-list {
@@ -59,9 +63,13 @@ body {
     padding: 8px;
 }
 
-#country-list tr:nth-child(even){background-color: #f2f2f2;}
+#country-list tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
 
-#country-list tr:hover {background-color: #ddd;}
+#country-list tr:hover {
+    background-color: #ddd;
+}
 
 #country-list th {
     padding-top: 12px;
@@ -70,4 +78,9 @@ body {
     background-color: #04AA6D;
     color: white;
 }
+
+.country-cell {
+    color: black
+}
+
 /*endregion*/
